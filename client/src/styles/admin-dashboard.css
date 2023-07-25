@@ -1,0 +1,11 @@
+.admin-dashboard-page {
+  background-color: #f8f9fb;
+  min-height: 100vh;
+}
+
+.side-navbar {
+  background-color: #007fff !important;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative !important;
+  height: 100vh !important;
+}
