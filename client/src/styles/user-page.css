@@ -1,0 +1,61 @@
+.user-dashboard-page {
+  background-color: #f8f9fb;
+  min-height: 100vh;
+}
+
+.countdown-timer {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #007fff;
+}
+
+.status-box {
+  height: 32px;
+  width: 32px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.status-box.not-visited {
+  border: 1px solid #000;
+}
+
+.status-box.not-answred {
+  background-color: red;
+  color: #fff;
+}
+
+.status-box.marked-for-review {
+  background-color: orange;
+  color: #fff;
+}
+
+.status-box.saved {
+  background-color: green;
+  color: #fff;
+}
+
+.status-box.correct-answer {
+  background-color: lightgreen;
+  color: green;
+}
+
+.status-box.wrong-answer {
+  background-color: #f5c9c1;
+  color: red;
+}
+
+.correct-answer-option {
+  background-color: lightgreen;
+  padding: 5px 0;
+}
+
+.wrong-answer-option {
+  background-color: #f5c9c1;
+  padding: 5px 0;
+}

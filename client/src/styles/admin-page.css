@@ -1,0 +1,209 @@
+.side-navbar {
+  background-color: #007fff !important;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative !important;
+  height: 100vh !important;
+}
+
+.admin-page {
+  background-color: #f8f9fb;
+  min-height: 100vh;
+}
+
+.admin-dashboard {
+  padding: 50px 0;
+}
+
+.quick-actions-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.quick-actions-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  padding: 20px;
+  min-height: 150px;
+  cursor: pointer;
+}
+
+.quick-actions-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.create-test-quick-action {
+  background: #007fff;
+  color: #fff;
+}
+
+/* tests */
+.admin-tests-page {
+  padding-top: 30px;
+}
+
+.action-buttons {
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px;
+  width: max-content;
+}
+
+.status-badge {
+  text-transform: capitalize;
+}
+
+/* edit test */
+.admin-edit-test {
+  background-color: #f8f9fb;
+}
+
+/* edit test */
+.test-edit-container,
+.test-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.test-edit-left {
+  flex: 1;
+  padding: 10px;
+  background-color: #f8f9fb;
+}
+
+.test-edit-right {
+  max-width: 400px;
+  flex-basis: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+.create-new-question-btn {
+  position: fixed;
+  bottom: 10px;
+  width: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.profile-image {
+  border-radius: 10px;
+  width: 32px;
+}
+
+/* number grid */
+.number-grid-container {
+  height: 87vh;
+  overflow-y: auto;
+}
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 20px 0;
+}
+
+.number-cell {
+  height: 70px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.number-cell:hover {
+  border-color: #fff;
+}
+
+.number-cell.incompleted {
+  border: 2px solid red;
+  color: #fff;
+}
+
+.number-cell.deleted {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #d2d2d2;
+  border: 1px solid gray;
+}
+
+.number-cell.not-answered{
+  color: #fff;
+  background-color: red
+}
+
+.number-cell.answered{
+  color: #fff;
+  background-color: green
+}
+
+.number-cell.marked{
+  color: #fff;
+  background-color: orange
+}
+
+.number-cell.active {
+  background-color: #fff;
+  border: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.section-div {
+  border: 1px solid #ccc;
+  min-width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.section-div:hover {
+  background-color: #eee;
+}
+.section-div.create-btn {
+  color: #007bff;
+  border-color: #007fff;
+}
+
+.section-div.active {
+  background-color: #007fff;
+  color: #fff;
+  border-color: #007fff;
+}
+
+/* editable text input */
+.editable-text-input:focus {
+  outline: none;
+  box-shadow: none !important;
+  border: none;
+}
+
+/* edit question */
+.edit-question {
+  padding: 15px;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* score board */
+.score-board {
+  background-color: #f8f9fb;
+  min-height: 100vh;
+}

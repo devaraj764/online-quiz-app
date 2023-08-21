@@ -1,12 +1,9 @@
 import SideNav, {
-  Toggle,
-  Nav,
   NavItem,
   NavIcon,
   NavText,
 } from "@trendmicro/react-sidenav";
 import "@trendmicro/react-sidenav/dist/react-sidenav.css";
-import { FaHome, FaUser } from "react-icons/fa";
 import {
   AiOutlineFileDone,
   AiOutlineHome,
@@ -14,9 +11,8 @@ import {
 } from "react-icons/ai";
 import { LiaEyeSolid } from "react-icons/lia";
 import { useNavigate, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
 
-const AdminNavbar = ({ defaultSelected }) => {
+const AdminNavbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname.split("/")[2];
@@ -30,7 +26,7 @@ const AdminNavbar = ({ defaultSelected }) => {
       className="side-navbar"
     >
       <SideNav.Toggle />
-      <SideNav.Nav defaultSelected={currentPath}>
+      <SideNav.Nav defaultSelected={currentPath || 'dashboard'}>
         <NavItem eventKey="dashboard">
           <NavIcon>
             <AiOutlineHome style={{ fontSize: "1.75em" }} />
